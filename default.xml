@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="baritono-pony"
+	  fetch="ssh://git@github.com/baritono-pony/" />
+  <default remote="baritono-pony"
+	   revision="master"
+	   dest-branch="master"
+	   default-start-in-all="true" />
+  <project name="a"
+	   path=".sub-repos/a"
+	   groups="a">
+	 <linkfile src="tools/hello" dest="tools/hello" />
+  </project>
+  <project name="b"
+     path=".sub-repos/b"
+     groups="b">
+   <linkfile src="tools/world" dest="tools/world" />
+  </project>
+</manifest>
